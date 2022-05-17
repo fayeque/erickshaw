@@ -478,6 +478,7 @@ text-align: center;
           background: url("../images/wave3.png");
           background-repeat: no-repeat;
           background-size: cover;
+          padding-bottom: 0;
       }
       
       .logo{
@@ -510,11 +511,32 @@ text-align: center;
      align-self: center;
      justify-self: center;
  }
+ .featured{
+     padding: 2.4rem;
+ }
+ .heading-featured-in{
+     font-size: 2.4rem;
+     color: #333;
+     margin-bottom: 3rem;
+ }
  .contacts{
      gap: 1rem;
  }
+ .featured .logos{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+     justify-content: center;
+ }
+ .featured .logos div{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+
  .featured .logos img{
-     height: 6rem;
+     height: 12rem;
  }
  .container{
      max-width: 130rem;
