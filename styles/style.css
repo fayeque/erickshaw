@@ -477,6 +477,17 @@ text-align: center;
           justify-content: center;
           background: url("../images/wave3.png");
           background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      .logo{
+          height: 5.4rem;
+      }
+      .header-icons{
+          font-size: 4rem;
+      }
+      .header_text{
+          font-size: 1.65rem;
       }
  .grid--2--cols{
      grid-template-columns: 1fr;
