@@ -340,6 +340,11 @@
   cursor: pointer;
 }
 
+.toto-btn a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .toto-btn:hover{
     background-color:#f75d34;
     color: white;
