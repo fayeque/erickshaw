@@ -476,6 +476,7 @@ text-align: center;
           align-items: center;
           justify-content: center;
           background: url("../images/wave3.png");
+          background-repeat: no-repeat;
       }
  .grid--2--cols{
      grid-template-columns: 1fr;
