@@ -1,8 +1,8 @@
 /* Header section  */
 .header{
     max-width: 130rem;
-    height: 100vh;
-    background: url("../images/wave.png");
+    /* height: 100vh; */
+    background: url("../images/wave3.png");
     /* background-image:linear-gradient(to right,#99edc3,#5dbb63); */
     /* background: url("https://www.bikes4sale.in/pictures/default/nibe-motors-e-passenger-auto-rickshaw/nibe-motors-e-passenger-auto-rickshaw-pic-1.jpg") no-repeat; */
     /* background-size: cover; */
@@ -448,6 +448,7 @@ text-align: center;
     font-size: 1.2rem;
     font-weight: 450;
     margin-bottom: 1.2rem;
+    line-height: 2.4rem;
     text-align: center;
 }
 
@@ -468,6 +469,7 @@ text-align: center;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          background: url("../images/wave3.png");
       }
  .grid--2--cols{
      grid-template-columns: 1fr;
@@ -558,28 +560,35 @@ text-align: center;
 }
 .services-text{
     font-size: 2rem;
+    line-height: 2.4rem;
 }
 .services-image{
     width: 50%;
     /* height: 40%; */
+}
+.heading{
+    font-size: 2rem;
 }
 }
 
 @media only screen and (min-width: 450px){
     .list-items{
         height: 50rem;
+        overflow-x: hidden;
     }
 }
 
 @media only screen and (min-width: 650px){
     .list-items{
         height: 70rem;
+        overflow-x: hidden;
     }
 }
 
 @media only screen and (min-width: 900px){
     .list-items{
         height: 50rem;
+        overflow-x: hidden;
     }
     .list-items .list-item img{
         width: 100%;
