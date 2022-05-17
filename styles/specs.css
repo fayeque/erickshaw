@@ -1,0 +1,207 @@
+/* navbar  */
+.navbar{
+    max-width: 130rem;
+    /* display: flex;
+    gap: 3.6rem;
+    align-items: center; */
+    padding: 2rem 4.8rem;
+    height: 12rem;
+}
+
+
+.contacts{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.logo{
+    height: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.icons{
+    font-size: 2.4rem;
+    color: #e61515;
+}
+
+.header_text{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #e61515;
+}
+
+.section-price{
+    padding: 2.4rem 0 4.8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-parent{
+    width: 70%;
+    /* box-shadow: 2.4rem 2.4rem 4.8rem rgba(0, 0, 0, 0.075); */
+}
+
+.price-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-img{
+    width: 50%;
+}
+
+.price-preview-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    margin-bottom: 2rem;
+}
+.price-preview-image img{
+    width: 10%;
+}
+
+.price-name{
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #e85810;
+    padding: 0 2rem;
+}
+
+.price-price{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+
+
+.parent{
+    margin-bottom: 4.8rem;
+}
+.parent-main{
+    
+cursor: pointer;
+border: 1px solid #222429;
+padding: 2rem 2.4rem;
+transition: all 0.5s ease;
+color:black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.parent-container{
+    padding: 0 2rem;
+    /* background-color: #fdf2e9; */
+}
+.plus-icon{
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: none;
+}
+
+.icon-active{
+    display: block !important;
+}
+
+.minus-icon{
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: none;
+}
+.parent-main h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+}
+.parent-main:hover{
+background-color: darkblue;
+color:white;
+}
+.parent-hideshow{
+    /* opacity: 0; */
+    visibility: hidden;
+    transition: all 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    /* margin-top:1.2rem; */
+   
+    /* padding: 2.4rem 2.4rem; */
+    border: 1px solid #222429;
+   
+}
+/* 
+.parent-hideshow p{
+    font-size: 1.4rem;
+    font-weight: 400;
+} */
+
+.show{
+    visibility: visible;
+    max-height: 30rem;
+    
+    /* height: auto; */
+}
+
+.toggle{
+    /* visibility: visible;
+    max-height: 100px; */
+    padding: 2.4rem 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+/* Set max-height to something bigger than the box could ever be */
+}
+.toggle p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    border: 1px solid black;
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 2rem 2.4rem;
+    }
+    .contacts{
+        display: block;
+    }
+    .price-parent{
+        width: 100%;
+    }
+    .price-img{
+        width: 70%;
+    }
+    .price-name{
+        font-size: 1.6rem;
+    }
+    .price-price{
+        font-size: 1.4rem;
+    }
+    .parent{
+        margin-bottom: 3.2rem;
+    }
+    .parent-main{
+        padding: 1.2rem 2rem;
+    }
+  }

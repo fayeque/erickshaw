@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="/index.js" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Toto Dekho</title>
+</head>
+<body>
+    <header class="header">
+      <div class="navbar">
+        <a href="#">
+            <img class="logo" src="https://www.mahindraelectric.com/images/mobile-header-banner_nw_1.png?v=123" />
+        </a>
+        <div class="contacts">
+            <div class="contact">
+                <ion-icon class="header-icons address-icon" name="location-outline"></ion-icon>
+                <p class="header_text"><strong>Address: </strong>Raniganj More Punjabi More</p>
+            </div>
+            <div class="contact">
+                <ion-icon class="header-icons phone-icon" name="call-outline"></ion-icon>
+                <p class="header_text"><strong>Phone: </strong>+91 7797571993</p>
+            </div>
+        </div>
+        </div>
+        <div class="hero-section grid grid--2--cols">
+            <div class="hero-left">
+               <p>India's Only Premium Electric Vehichles </p>
+               <h2>Most stunning E-rickshaw</h2>
+               <h1>Choose your E-rickshaw Today</h1>
+               <p>Best world-wide e-rickshaw are here</p>
+            </div>
+            <div class="hero-right">
+              <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/05/Home-Page-All.jpg" class="hero-image" />
+            </div>
+        </div>
+    </header>
+    <section class="section-featured">
+      <div class="container">
+        <div class="featured">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="https://ymwsolution.com/wp-content/uploads/2021/12/ketron55.jpg" alt="Ketron logo" />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAABQVBMVEX///8Akj/+//4BRCP9//38//8AAAAAXSNXk3EAYyr+/f8AWh0AXSEAVRgAXCLy9vMdbTrQ4dcecUDm8Oi/2Mg/gFXX5d1gmnZJimEAjDYCkUB2qouqy7mNuJ7O49b09PTLyciMiYgAhy0APBmsq6q5t7Q6NTLd29pjYF0AijcCQSKh1boAUhMAURfi7ua/v75IRUN8xpwAgyHC49DY7uIAMxIAmD9bs4KFs5Yue03i4+PS0dE9ODYfHh2enZsRCwiWzapAqnAknFa53MltwZc0omGLzKgdm04snl1iuYa+4dKT0K59w5ROtHW348oiik0AezF+pJQARBcCVCeesqZfhXAlXEGvwrd5mYrD0cwOTC40bVFJbFADdDViiHQXXjZNcWEFPCUAKgNbmnQARgcedkF3oIV8eXdYV1STkY8fGhk8/Q2gAAATKklEQVR4nO2cC1vbSLKG24qEkWxL8t2y5ZswF2NsIDa+BhM7XIYww5AhgZBsspnNDIb8/x9wqrpblmwIYc9i59lz9D2bjCy1Wm9XV1dXt5QlxJMnT548efLkyZMnT548efLkyZMnT548efq/L0kQ4G8RDhRFEASJKD+b6BFSADL6cjCow7EAP6SfDfQYSVpue1g2rOFhA38pRPjZRD+WQl798txqNg3r+dF2Dal/GrSA/3vk07XTQdoyWvtDyzo4JZL006BFikyNpvx4YGmvtk800jg2nqcrP9GnEfd1TcHA8AhoKoGIJ2kLqH9W9ABriZXhNlEeaTbkhM4hlbR1VJ8p2cMQlbI1bAC9oD2iPMZnBQIHOSxbg8fc8ORCn2hUcgPL2Mafrw7rNTa2RIFNJPfcQrhTiHDXCXjU3B0bnLhxUD6NDp4fNQCn8Uv54PikHmVQYFLpIaLTNJp63m4tCBB5MXppteHzfTxTTz+3ykcH+5WciD8fBFLA1Ok6TjHzlUIqR4bPV94njWE6R0QJhpeRNkAI3hAfuhcyj0MD/GOu0DQKbPuMdBr+1MHGLRFSIenY8KV9PgT3HQ22XzU0URBF7scYER1EiZyWrX2JPNi0p6eOtsoGEPp8xkAkp8NTJIoeGL5mGrmhMZZ11GrQAIfFIUWaNGs9bR3PFRl6tzFAM1OVDyHwtTQFEOpH1NbQEss4GhzWNQwwdUyQMCHlLfhJ0Aqp/2I1ObPPwHmi8lrAfLNS9qU58WsaPLSXQx8PKoqTQgsMer7ZR+XIot6LzOmm9Rv4c01UJAgo+xY4NNqYlpMqB2UcmhBUjk9FovEm0yrK1va8slPwDCJtp7kXUGgYixW8QC1bOxhuv47ywvVW2uK9YRjp48PBywqgK+jh5FfLqJA5pafwFO0YjOkI6I1fauCzCC2RKCVGazb2IY6M2+YzaFg5OnwZFQFaO7CGubkQU5rGb2UaHlzQPmufsJhLh5qIh9GTobtpcAe7xyj/dnxKyEnZamlzS0/rB9aY1bFiucKgwa8FCYKCVhmUjalSad5WAzK8OrSoQmYVphXCRovA5wjz97Ny2tdsumxNY/I+Cw20OASXVtlixJM9wkZu2hgODTQ0+vZMRdGjb579cX5+LpddvQ7I6dZpzVmoKuQQllW+hwTODcNgVhKdpFcLv313sb60jjp3ja/ycB8DnMtmwqHVfJDZ52vOcg0gXr558/by8vLt+3cXH9aXltafodbXz5rcYuVfths4nFyxSyHaoPwwc9qHKd6MmAEl8R7MSwWsz55x6E90RBnpwUmUZRasPOUA969jIE8/BG3sz2hmURTt6iohRi/ffVhnrFTU0hB0ISE6xeEvUmSxXmlw44mKuG89CM3SrBkpf/X548U/3n38wA0Mg/Ac2WWfZYArU2L68MZJ64jGA8LCR5QHxu9DD6MPPfg/U/Ty88XSztLOzs7S0vkZTBDls0+fzgzjgG5uiSIi1yqtYRlyjPIJvYXOzbAgeBj6aGbzIXXVaPjy7Zv3n7/8E0cf9HkTMqLK2E7RyvEQ52doD64HUDWY8cRj42H3mGX4sJfVgiBW6KgHvNYp+gFe0Or7Q5+TiRiDKE7kYmtfgzXYQ9Rp46gxO2iHnmiwLoGM57jOcj0Srf96kDaaTScmp8v7dHPvtDzIkZMH/CM9W592pJCT52XqyszGhwOfhQ7+Kd30jbkxSQXf+O358ERsfZ867Su35sEM+VCjdcJ3NYA4bVln5zQMwvQ4dgTe66cwLI8rw+9SA/TpPDY9MF1mYbhxODgCKN+nP/5c55O64yEGxD1YogwsX/ngwGCA98g4mN+mmEIDMm4R+Jq/j2fI9U/NMZqBy1yROrRtZ0yk3TMNjTOn5Ds7Z0+vBidGHX5Zsif1Z2e2qdM+th1aO7CMsajLu3JUiEC/zm0hLpDXuOZjmXz69Gp9TI0Owqma1iCKy/JjplarNfj97CztTvuaZbpomdf6UBvYwRcmB8Ux9fonF9P0GEtcLKEDufxj265wDtyAsm1wLzCGDXL5zJbb1D7f6eRtb5fW/zx3/AMcfL+CeqXNxdYC3UJiloYsTfq4ZFP/KbsMOQX9fsdJwKlLNw1Mt62D2qPfIPwnkog4sKGP4felk2D/cfYwtDuYswpwi2cOoRpdcNuGhshGtLGpl5YiY6byXfdgYdGxNa1hG/LB+Wz11ummqI8ndG93AAeZP7ypDSzGY6Vfk4mN56tnS1jqU7PpLM+bPrqFIMzDPRRFPHheBjDrmGJpF9TUSx+vYOo26F6ZMaxIiuSG1v6xg6aGYO4OITPNTSegBSW6vz2wrOE2S0KEt8izdJGAJZbUYpuSLyf2R1EsoFNbu+b7g+h8XrnAQxrbjcPW4TgXTqCplz5KmEbjahayUwjC0tTM8Yb2x/oz+czXHG/YzCXNY9jC6fYrugRgVALwrD9b/5JA7zxGrzbSh+L0bqj4ntl6/Q8ZVjllmgmw93jzeuciTgCFPyDOzlsniNMxOj1tXH6kC/qdL4n64fFgMDjw+Spz4r1Pnyn0G7ovt09NeBca7Cl9Bu/fAedHSaQyn+XW/ZLIFZp65z3dAW0M74cG30HnX/pwhZsi0ASxZc0xoZ4STg7vKLRAt2238e0RQCt3LP1m59nS+iWRROpe9bQ1v3F4RwoGNOj3z4gsKWDqpu8+n66hod9icUXB5boFM+pP/fAK5vKddxp+KqOQQ4x6dyxNDY29QffPRAyO0wnKvHW5s/SvL9RDJdwOs4w7a1ale7GD7eKntdZz66gx/y8Q3NK+XFy8zxPmE6eD3wa5O1+CXV5cfKnx4C6S2v7xduV/+1qcfvok2GJ18glYwAkCpdhrcCKwy+wYJz1J4Qs9LaqJ+HZLsF91KPiCTuG3oKLdRB5nJgrNTKyI4sTCRbBbIU10gTK9upnuHwxG0ndWnAokQRO9rpCJ5RJeVFylFUosuM7ZTQY4hb+acdU3fnUOZ51OwB9T0IqkuSXaddOdaUfMegw5bGbb7baJc0Q0G5towX2a8oEHv82ybfqDe4SM3mH6OxKJdFKL12aNA5jwG893OhG9zaFJLRvX1UAoEFD1eLaW/evaqSq26FYma+Z4j9WS47OpDHtbfj3+nXFuSWX5OkaYqiw33dBrWQ6ofr8/EApVQxuhgKrqmRq9N6vLgQBcUQOy/1qgXS2akQAQy7quww1VXd/46rhSFu4PoDZQoUBQT5l5NFqsGqhCKwP4iDgNMYnzUAgaHqpWZVmthvAaFNlI2TOkgpVVaWVAVTWnO0Rr5L76Zdmvp74mk6kOEKobnTAdZLVwWwb5M7mGRntOu64G/WqnHUs0wrFMJBQMhlLOTBw1TaxJliPxeLwD/QFtXoyCE2sxM6MHZTkYyZphajQxZrZ1f1DOmLGYme2oeNciXhy7B1SWxLPBSNs0tXtcKqb7ZfZ0KZGNhGR5o1Pjb4w7YGW9QZjDaMmqPxjM2PuziRRgxSfSh2gEykdyMAiisbYOx1gtrWmxKgfVLHG5fjIUWGRHZtUvqynsMu68IlsSxQHFP21lVkAkYTAD1k7vSHTAJhsZgYY8LY4QUfYtnQB2lvHBogCRQQQLLlYDHQcay6dCUJ6fynUANJTB9YBCMiE5KJv4Eox+3gl/tQOBDKFfI8f8fjmQxKAgiSKnlrD6DbBYmDFOugfcb0NDbIXqTei2oF6jH2jb0DR/NpE5OW4sNjCyEXFBCxwaXQIHrQmcgUiCBiMOLXFjQoVZNZRlgTEm+7FiwdUN9I1Zssqh75MNzb6P0sAlZNWkAdWGRitGO/zYpWxIT4ybj+U5NFMe7+b9mwkE/bLT1QKHpi4ck1W09FQqC9DQUKf+B6AZqBzIss86bGj4kYWRjp3tVkIPjS1xF5oswt0BRjZraBzMYGlhAhpOB6EXY1O3ZuLjd/J3oaXU3KBNGBZ+nX1a7II2YXy6hx2v2tnWugsdhvgR5O2cDfQiH6FhFj0YyxhaIUlwmlBSY/VNS7wPWluEkGVHpZlAB+KxRDiRMzMRlcVpMgENEVtFl+abBvCnFru6uoqhwiz2O9A5TRS1hJlSIZLZDjUTaBDMzbJfhXgXTNV4pudA1yIw2WGM4tJSMCPADXCSRxobGirqYLqiBuCOTgxqmplPw4hRcf6HJwXlZOIOdALLhNrje5R2PBIM+v1Bf+crCyAONOQVmIVgBpCM8k2SmUCrkUw7206mIirCsWlgElrlEyWtEKeIWhzDTNJ+3TyG1r8mIXeL6yHoNDXCQf8taOGR0CGeB4QzUIMc8JsMwnGPv3F8JifWDNdAGDDteczxaTpatVgGPFquolMDREZ1Qws4IwYhGirfhRbvQk/8CyQn5NHZGtInCG4sOLsGIvaAKz3C7AGgg6ZT5XTIM2nvxOnPSWgMNw9DC3eg6brpPmiamWRg6sPZZcI9aMgLyjl3xQit3g/N4ncGoIOsL9qT0IQmTN+D5rneYycXnFJyYCA/zcAmJhdMegNO+HgYmp3IsYFgQ0+mmZmA+j1oEk1A5nYXWko4PT05I5Lo30CqfsVDFzSeldU4vggY22oCmkxDwz0Y3DeSsEyHYQeDvc3+bRxrcjLEenMSWqJDMIXJnZjE1HQMDZ2XO78eZ4JT0LUI4k1ZGhZAGM38pus16w+ha3SmonHS5Dkzm/bBjpjic2ebsDSOtlgIUuNpaFDyr/b3oE0Vl18xNzQu/elCAgfoeE/iB9CQmkOKFcS5R+Gzrt27uHKlw1q6A43rhMW/MLYitHsgklhAro+3xieha5hPY/3KRO4h0vwHQqPjVtkfWDqKSS5dykIowDQVC7PNCAjygVCW3B+ns1Xq/Zi7uH060dmAuvDLNNw+inFolGjik1Q9RvsBFwRBnYY8AVci2JzUuJpJS0u0PDyHQ0uxeAD8+NykqyMYlPBDt0vDtRAkOArdrImpuEbk38Zp4Yw/RHMftEDQHryiZnZCEB0oNPzSMjQZTV3jlBiXVb8/dI4mkTQN+1eW25rGPMKEWc4f0K/DUVy5ZiKwzHUt78flU9eZdvs6DlOUP6RmbQPiUAzKX81YLpZdlAMhsAtuHYlaDaMppCkpqo4eCKLZNS1GU6IIP/13UHXS+bausw2GanWjWq3idoQ/buIwNnVdZVd0Pcu8KgFPCwRC/kino6tQMqAnnfWXGeHlQxsbG1hTKCDHTXvgwEjWQ6paxTQHL3VidJUrJnUdt37UQBU3XihACBzHjERUvh+C2kCuqp3OS9eq7tLfkU4qY2osOcA0jkquXrMtOOjKZEemVBsBvx5vJ1yL0axdSYTW1OE1SeNYFl7U/SqQhVQ5kuFv8rVUEG6I6BOKJ9Bidk3sCA/tfE2JhsPhXBj/okpE+SJeUDR+JQd/Rbm1QDUzm0kmk5m2Gdbsj0zpRSzPK8I/NV7TeO5VcBuwDfdmsqbz4XSN38OfTwVXtcQEF/vvj/512mM/w5jbV0ie/r9rJp4mPr7Wf+MFkOvfcj2dupuFwubm8mYeq+2W+qXVfBdO55eXl3u8yKpdpFfAA7zchaMC+43loBIorKzCxR4WKeTtMl32hF6e5Aubq08GPdp90S8Vd5fBGP2VtVKpuAWHpRejzdLWKM+KrO1uwfmVzcLW7qg0WoHT3eLuSinfu9m9KZXWXuTzxd3dPhYs5qHMWn9tq0R4GWj/6NtuSSH54k3vByyPV2lhpQs1wlOKC2vwjO5NiSzvbYGJ+vQ3wQtbYKniZv5moUi6Wwu3hCwvrIDd1hZGROmurZLeysK3TUJuCwTL5Fe39qANmwu7FHN1BYrBxeUnYyalvRf51V63Rza/faP9t1novliANpDuygJ7zu3eFsmvdrv5NeQdLawp0CwbGrykS3r9rYUXq6TfI1CmiJbYXSWbtAyovwf0m/38k0J3qRFGaE+qzT00GxptpHDobr8vEAqdZ5a2obsj9PHNZbD1Tb5kQ/d2odljaLhllL99OudA6JURejQgcm8Av9gtENeZ270Xt7tACkDgr7vF/Bh672btBYVGl1q4HUODRxQdaHgGDIYnZEZLF7BGeNoNh17e+zYFvdUb9WmR0QiHgMs9CmsMWiG3C99uVh3oPofGlwHKzbgXnwxaWC2Q1fwt4lCt7u6hv4Br9wmHhsCVR6A+dPVa3uUeZLMr9Ci0Mlr4xqAFUtjbK9iW7hVwKN88JTP1aSLli3k+/IACnoHDfXNhq2tDg0MT5tO9b3tun4bwXiiSAkCD6+7Z7lHE0cCgIeo8OXS+uLBbWt28gUoLL3b7q71bcNn8aLfU7W2tsLGTHy0w51zFAQUe/205D26/qYDVt3q9/kpfuaXDsfeigGXWev1dKAdlvvVXCyOMqGt2+59Gvf7t7W2/OFqGLDTfX1sbLdP3+Muj0eg2zz5FKdzeFukssXxbxEjcH/UL/WKx1N3EW+Go271Fc0LfrEIZPNcb13w76it5LFh6Uqe2JfLNUZ4l5O98pMQl3Dmwf0uud/N3M/EZJEyP//8fugt9z52Ct3zw5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTp/86/Q8FI44NTykAuwAAAABJRU5ErkJggg=="
+              alt="Big bull logo"
+            />
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAABQVBMVEX///8Akj/+//4BRCP9//38//8AAAAAXSNXk3EAYyr+/f8AWh0AXSEAVRgAXCLy9vMdbTrQ4dcecUDm8Oi/2Mg/gFXX5d1gmnZJimEAjDYCkUB2qouqy7mNuJ7O49b09PTLyciMiYgAhy0APBmsq6q5t7Q6NTLd29pjYF0AijcCQSKh1boAUhMAURfi7ua/v75IRUN8xpwAgyHC49DY7uIAMxIAmD9bs4KFs5Yue03i4+PS0dE9ODYfHh2enZsRCwiWzapAqnAknFa53MltwZc0omGLzKgdm04snl1iuYa+4dKT0K59w5ROtHW348oiik0AezF+pJQARBcCVCeesqZfhXAlXEGvwrd5mYrD0cwOTC40bVFJbFADdDViiHQXXjZNcWEFPCUAKgNbmnQARgcedkF3oIV8eXdYV1STkY8fGhk8/Q2gAAATKklEQVR4nO2cC1vbSLKG24qEkWxL8t2y5ZswF2NsIDa+BhM7XIYww5AhgZBsspnNDIb8/x9wqrpblmwIYc9i59lz9D2bjCy1Wm9XV1dXt5QlxJMnT548efLkyZMnT548efLkyZMnT548efq/L0kQ4G8RDhRFEASJKD+b6BFSADL6cjCow7EAP6SfDfQYSVpue1g2rOFhA38pRPjZRD+WQl798txqNg3r+dF2Dal/GrSA/3vk07XTQdoyWvtDyzo4JZL006BFikyNpvx4YGmvtk800jg2nqcrP9GnEfd1TcHA8AhoKoGIJ2kLqH9W9ABriZXhNlEeaTbkhM4hlbR1VJ8p2cMQlbI1bAC9oD2iPMZnBQIHOSxbg8fc8ORCn2hUcgPL2Mafrw7rNTa2RIFNJPfcQrhTiHDXCXjU3B0bnLhxUD6NDp4fNQCn8Uv54PikHmVQYFLpIaLTNJp63m4tCBB5MXppteHzfTxTTz+3ykcH+5WciD8fBFLA1Ok6TjHzlUIqR4bPV94njWE6R0QJhpeRNkAI3hAfuhcyj0MD/GOu0DQKbPuMdBr+1MHGLRFSIenY8KV9PgT3HQ22XzU0URBF7scYER1EiZyWrX2JPNi0p6eOtsoGEPp8xkAkp8NTJIoeGL5mGrmhMZZ11GrQAIfFIUWaNGs9bR3PFRl6tzFAM1OVDyHwtTQFEOpH1NbQEss4GhzWNQwwdUyQMCHlLfhJ0Aqp/2I1ObPPwHmi8lrAfLNS9qU58WsaPLSXQx8PKoqTQgsMer7ZR+XIot6LzOmm9Rv4c01UJAgo+xY4NNqYlpMqB2UcmhBUjk9FovEm0yrK1va8slPwDCJtp7kXUGgYixW8QC1bOxhuv47ywvVW2uK9YRjp48PBywqgK+jh5FfLqJA5pafwFO0YjOkI6I1fauCzCC2RKCVGazb2IY6M2+YzaFg5OnwZFQFaO7CGubkQU5rGb2UaHlzQPmufsJhLh5qIh9GTobtpcAe7xyj/dnxKyEnZamlzS0/rB9aY1bFiucKgwa8FCYKCVhmUjalSad5WAzK8OrSoQmYVphXCRovA5wjz97Ny2tdsumxNY/I+Cw20OASXVtlixJM9wkZu2hgODTQ0+vZMRdGjb579cX5+LpddvQ7I6dZpzVmoKuQQllW+hwTODcNgVhKdpFcLv313sb60jjp3ja/ycB8DnMtmwqHVfJDZ52vOcg0gXr558/by8vLt+3cXH9aXltafodbXz5rcYuVfths4nFyxSyHaoPwwc9qHKd6MmAEl8R7MSwWsz55x6E90RBnpwUmUZRasPOUA969jIE8/BG3sz2hmURTt6iohRi/ffVhnrFTU0hB0ISE6xeEvUmSxXmlw44mKuG89CM3SrBkpf/X548U/3n38wA0Mg/Ac2WWfZYArU2L68MZJ64jGA8LCR5QHxu9DD6MPPfg/U/Ty88XSztLOzs7S0vkZTBDls0+fzgzjgG5uiSIi1yqtYRlyjPIJvYXOzbAgeBj6aGbzIXXVaPjy7Zv3n7/8E0cf9HkTMqLK2E7RyvEQ52doD64HUDWY8cRj42H3mGX4sJfVgiBW6KgHvNYp+gFe0Or7Q5+TiRiDKE7kYmtfgzXYQ9Rp46gxO2iHnmiwLoGM57jOcj0Srf96kDaaTScmp8v7dHPvtDzIkZMH/CM9W592pJCT52XqyszGhwOfhQ7+Kd30jbkxSQXf+O358ERsfZ867Su35sEM+VCjdcJ3NYA4bVln5zQMwvQ4dgTe66cwLI8rw+9SA/TpPDY9MF1mYbhxODgCKN+nP/5c55O64yEGxD1YogwsX/ngwGCA98g4mN+mmEIDMm4R+Jq/j2fI9U/NMZqBy1yROrRtZ0yk3TMNjTOn5Ds7Z0+vBidGHX5Zsif1Z2e2qdM+th1aO7CMsajLu3JUiEC/zm0hLpDXuOZjmXz69Gp9TI0Owqma1iCKy/JjplarNfj97CztTvuaZbpomdf6UBvYwRcmB8Ux9fonF9P0GEtcLKEDufxj265wDtyAsm1wLzCGDXL5zJbb1D7f6eRtb5fW/zx3/AMcfL+CeqXNxdYC3UJiloYsTfq4ZFP/KbsMOQX9fsdJwKlLNw1Mt62D2qPfIPwnkog4sKGP4felk2D/cfYwtDuYswpwi2cOoRpdcNuGhshGtLGpl5YiY6byXfdgYdGxNa1hG/LB+Wz11ummqI8ndG93AAeZP7ypDSzGY6Vfk4mN56tnS1jqU7PpLM+bPrqFIMzDPRRFPHheBjDrmGJpF9TUSx+vYOo26F6ZMaxIiuSG1v6xg6aGYO4OITPNTSegBSW6vz2wrOE2S0KEt8izdJGAJZbUYpuSLyf2R1EsoFNbu+b7g+h8XrnAQxrbjcPW4TgXTqCplz5KmEbjahayUwjC0tTM8Yb2x/oz+czXHG/YzCXNY9jC6fYrugRgVALwrD9b/5JA7zxGrzbSh+L0bqj4ntl6/Q8ZVjllmgmw93jzeuciTgCFPyDOzlsniNMxOj1tXH6kC/qdL4n64fFgMDjw+Spz4r1Pnyn0G7ovt09NeBca7Cl9Bu/fAedHSaQyn+XW/ZLIFZp65z3dAW0M74cG30HnX/pwhZsi0ASxZc0xoZ4STg7vKLRAt2238e0RQCt3LP1m59nS+iWRROpe9bQ1v3F4RwoGNOj3z4gsKWDqpu8+n66hod9icUXB5boFM+pP/fAK5vKddxp+KqOQQ4x6dyxNDY29QffPRAyO0wnKvHW5s/SvL9RDJdwOs4w7a1ale7GD7eKntdZz66gx/y8Q3NK+XFy8zxPmE6eD3wa5O1+CXV5cfKnx4C6S2v7xduV/+1qcfvok2GJ18glYwAkCpdhrcCKwy+wYJz1J4Qs9LaqJ+HZLsF91KPiCTuG3oKLdRB5nJgrNTKyI4sTCRbBbIU10gTK9upnuHwxG0ndWnAokQRO9rpCJ5RJeVFylFUosuM7ZTQY4hb+acdU3fnUOZ51OwB9T0IqkuSXaddOdaUfMegw5bGbb7baJc0Q0G5towX2a8oEHv82ybfqDe4SM3mH6OxKJdFKL12aNA5jwG893OhG9zaFJLRvX1UAoEFD1eLaW/evaqSq26FYma+Z4j9WS47OpDHtbfj3+nXFuSWX5OkaYqiw33dBrWQ6ofr8/EApVQxuhgKrqmRq9N6vLgQBcUQOy/1qgXS2akQAQy7quww1VXd/46rhSFu4PoDZQoUBQT5l5NFqsGqhCKwP4iDgNMYnzUAgaHqpWZVmthvAaFNlI2TOkgpVVaWVAVTWnO0Rr5L76Zdmvp74mk6kOEKobnTAdZLVwWwb5M7mGRntOu64G/WqnHUs0wrFMJBQMhlLOTBw1TaxJliPxeLwD/QFtXoyCE2sxM6MHZTkYyZphajQxZrZ1f1DOmLGYme2oeNciXhy7B1SWxLPBSNs0tXtcKqb7ZfZ0KZGNhGR5o1Pjb4w7YGW9QZjDaMmqPxjM2PuziRRgxSfSh2gEykdyMAiisbYOx1gtrWmxKgfVLHG5fjIUWGRHZtUvqynsMu68IlsSxQHFP21lVkAkYTAD1k7vSHTAJhsZgYY8LY4QUfYtnQB2lvHBogCRQQQLLlYDHQcay6dCUJ6fynUANJTB9YBCMiE5KJv4Eox+3gl/tQOBDKFfI8f8fjmQxKAgiSKnlrD6DbBYmDFOugfcb0NDbIXqTei2oF6jH2jb0DR/NpE5OW4sNjCyEXFBCxwaXQIHrQmcgUiCBiMOLXFjQoVZNZRlgTEm+7FiwdUN9I1Zssqh75MNzb6P0sAlZNWkAdWGRitGO/zYpWxIT4ybj+U5NFMe7+b9mwkE/bLT1QKHpi4ck1W09FQqC9DQUKf+B6AZqBzIss86bGj4kYWRjp3tVkIPjS1xF5oswt0BRjZraBzMYGlhAhpOB6EXY1O3ZuLjd/J3oaXU3KBNGBZ+nX1a7II2YXy6hx2v2tnWugsdhvgR5O2cDfQiH6FhFj0YyxhaIUlwmlBSY/VNS7wPWluEkGVHpZlAB+KxRDiRMzMRlcVpMgENEVtFl+abBvCnFru6uoqhwiz2O9A5TRS1hJlSIZLZDjUTaBDMzbJfhXgXTNV4pudA1yIw2WGM4tJSMCPADXCSRxobGirqYLqiBuCOTgxqmplPw4hRcf6HJwXlZOIOdALLhNrje5R2PBIM+v1Bf+crCyAONOQVmIVgBpCM8k2SmUCrkUw7206mIirCsWlgElrlEyWtEKeIWhzDTNJ+3TyG1r8mIXeL6yHoNDXCQf8taOGR0CGeB4QzUIMc8JsMwnGPv3F8JifWDNdAGDDteczxaTpatVgGPFquolMDREZ1Qws4IwYhGirfhRbvQk/8CyQn5NHZGtInCG4sOLsGIvaAKz3C7AGgg6ZT5XTIM2nvxOnPSWgMNw9DC3eg6brpPmiamWRg6sPZZcI9aMgLyjl3xQit3g/N4ncGoIOsL9qT0IQmTN+D5rneYycXnFJyYCA/zcAmJhdMegNO+HgYmp3IsYFgQ0+mmZmA+j1oEk1A5nYXWko4PT05I5Lo30CqfsVDFzSeldU4vggY22oCmkxDwz0Y3DeSsEyHYQeDvc3+bRxrcjLEenMSWqJDMIXJnZjE1HQMDZ2XO78eZ4JT0LUI4k1ZGhZAGM38pus16w+ha3SmonHS5Dkzm/bBjpjic2ebsDSOtlgIUuNpaFDyr/b3oE0Vl18xNzQu/elCAgfoeE/iB9CQmkOKFcS5R+Gzrt27uHKlw1q6A43rhMW/MLYitHsgklhAro+3xieha5hPY/3KRO4h0vwHQqPjVtkfWDqKSS5dykIowDQVC7PNCAjygVCW3B+ns1Xq/Zi7uH060dmAuvDLNNw+inFolGjik1Q9RvsBFwRBnYY8AVci2JzUuJpJS0u0PDyHQ0uxeAD8+NykqyMYlPBDt0vDtRAkOArdrImpuEbk38Zp4Yw/RHMftEDQHryiZnZCEB0oNPzSMjQZTV3jlBiXVb8/dI4mkTQN+1eW25rGPMKEWc4f0K/DUVy5ZiKwzHUt78flU9eZdvs6DlOUP6RmbQPiUAzKX81YLpZdlAMhsAtuHYlaDaMppCkpqo4eCKLZNS1GU6IIP/13UHXS+bausw2GanWjWq3idoQ/buIwNnVdZVd0Pcu8KgFPCwRC/kino6tQMqAnnfWXGeHlQxsbG1hTKCDHTXvgwEjWQ6paxTQHL3VidJUrJnUdt37UQBU3XihACBzHjERUvh+C2kCuqp3OS9eq7tLfkU4qY2osOcA0jkquXrMtOOjKZEemVBsBvx5vJ1yL0axdSYTW1OE1SeNYFl7U/SqQhVQ5kuFv8rVUEG6I6BOKJ9Bidk3sCA/tfE2JhsPhXBj/okpE+SJeUDR+JQd/Rbm1QDUzm0kmk5m2Gdbsj0zpRSzPK8I/NV7TeO5VcBuwDfdmsqbz4XSN38OfTwVXtcQEF/vvj/512mM/w5jbV0ie/r9rJp4mPr7Wf+MFkOvfcj2dupuFwubm8mYeq+2W+qXVfBdO55eXl3u8yKpdpFfAA7zchaMC+43loBIorKzCxR4WKeTtMl32hF6e5Aubq08GPdp90S8Vd5fBGP2VtVKpuAWHpRejzdLWKM+KrO1uwfmVzcLW7qg0WoHT3eLuSinfu9m9KZXWXuTzxd3dPhYs5qHMWn9tq0R4GWj/6NtuSSH54k3vByyPV2lhpQs1wlOKC2vwjO5NiSzvbYGJ+vQ3wQtbYKniZv5moUi6Wwu3hCwvrIDd1hZGROmurZLeysK3TUJuCwTL5Fe39qANmwu7FHN1BYrBxeUnYyalvRf51V63Rza/faP9t1novliANpDuygJ7zu3eFsmvdrv5NeQdLawp0CwbGrykS3r9rYUXq6TfI1CmiJbYXSWbtAyovwf0m/38k0J3qRFGaE+qzT00GxptpHDobr8vEAqdZ5a2obsj9PHNZbD1Tb5kQ/d2odljaLhllL99OudA6JURejQgcm8Av9gtENeZ270Xt7tACkDgr7vF/Bh672btBYVGl1q4HUODRxQdaHgGDIYnZEZLF7BGeNoNh17e+zYFvdUb9WmR0QiHgMs9CmsMWiG3C99uVh3oPofGlwHKzbgXnwxaWC2Q1fwt4lCt7u6hv4Br9wmHhsCVR6A+dPVa3uUeZLMr9Ci0Mlr4xqAFUtjbK9iW7hVwKN88JTP1aSLli3k+/IACnoHDfXNhq2tDg0MT5tO9b3tun4bwXiiSAkCD6+7Z7lHE0cCgIeo8OXS+uLBbWt28gUoLL3b7q71bcNn8aLfU7W2tsLGTHy0w51zFAQUe/205D26/qYDVt3q9/kpfuaXDsfeigGXWev1dKAdlvvVXCyOMqGt2+59Gvf7t7W2/OFqGLDTfX1sbLdP3+Muj0eg2zz5FKdzeFukssXxbxEjcH/UL/WKx1N3EW+Go271Fc0LfrEIZPNcb13w76it5LFh6Uqe2JfLNUZ4l5O98pMQl3Dmwf0uud/N3M/EZJEyP//8fugt9z52Ct3zw5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTp/86/Q8FI44NTykAuwAAAABJRU5ErkJggg=="
+              alt="Big bull logo"
+            />
+            <img src="https://ymwsolution.com/wp-content/uploads/2021/12/ketron55.jpg" alt="Ketron logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section-bestseller">
+      <div class="container">
+        <h2 class="bestseller-heading">Our bestseller</h2>
+        <div class="parent">
+          <div class="list-item active">
+            <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/05/banner4.jpg" />
+          </div>
+          <div class="list-item">
+            <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/05/banner1.jpg" />
+          </div>
+          <div class="list-item">
+            <img src="https://aahanaevehicles.com/wp-content/uploads/2022/02/toto-the-last-final-one-01-1-scaled.jpg" />
+          </div>
+          <div class="list-item">
+            <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/banner5.jpg" />
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+
+    <section class="section-bestseller">
+      <div class="container bestseller-parent">
+        <h2 class="bestseller-heading">Our bestseller</h2>
+        <ul class="sliders list-items">
+          <li class="list-item active">
+            <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/05/banner4.jpg" />
+          </li>
+          <li class="list-item">
+            <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/05/banner1.jpg" />
+          </li>
+          <li class="list-item">
+            <img src="https://aahanaevehicles.com/wp-content/uploads/2022/02/toto-the-last-final-one-01-1-scaled.jpg" />
+          </li>
+          <li class="list-item">
+            <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/banner5.jpg" />
+          </li>
+          <button onclick="slide(-1)" class="btn btn--left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button onclick="slide(1)" class="btn btn--right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="container services-section-container">
+        <h2 class="services-top-heading">Other Services</h2>
+        <div class="services-parent grid grid--3--cols">
+          <div class="services-child">
+            <img class="services-image" src="https://st2.depositphotos.com/4398873/7993/v/950/depositphotos_79935768-stock-illustration-screwdriver-technical-repair-service-logo.jpg" />
+            <h2 class="services-heading">Servicing</h2>
+            <p class="services-text">
+              <strong>*First 3 dervicing free</strong>
+              Top class servicing available at our showrooms
+            </p>
+          </div>
+          <div class="services-child">
+            <img class="services-image"  src="https://st2.depositphotos.com/4398873/7993/v/950/depositphotos_79935768-stock-illustration-screwdriver-technical-repair-service-logo.jpg" />
+            <h2 class="services-heading">Repairing</h2>
+            <p class="services-text">
+              Top class servicing available at our showrooms
+            </p>
+          </div>
+          <div class="services-child">
+            <img class="services-image" src="https://st2.depositphotos.com/4398873/7993/v/950/depositphotos_79935768-stock-illustration-screwdriver-technical-repair-service-logo.jpg" />
+            <h2 class="services-heading">On Door Servicing</h2>
+            <p class="services-text">
+              Top class servicing available at our showrooms
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="toto-section">
+      <div class="container">
+        <div class="parent">
+          <h1 class="heading">E-RICKSHAWS AVAILABLE AT OUR SHOWROOM</h1>
+          <ul class="options">
+              <li onclick="handleClick(0)" class="option selected">KETRON</li>
+              <li onclick="handleClick(1)" class="option">BIGBULL</li>
+              <li onclick="handleClick(2)" class="option">ARROW</li>
+              <li onclick="handleClick(2)" class="option">ENGINIA</li>
+              <li onclick="handleClick(2)" class="option">AAHANA</li>
+          </ul>
+          <div class="image-container current">
+              <div class="images">
+                  <img class="toto-img" src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/toto-1.png" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/toto-1.png" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/toto-1.png" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                   <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/toto-1.png" />
+                   <h2 class="car-name">Renault Kwid</h2>
+                   <p>Rs. 4.50 - 5.30 Lakh</p>
+                   <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/toto-1.png" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images"> 
+                  <img src="https://www.arrowvehicles.com/wp-content/uploads/2021/03/toto-1.png" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images"> 
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+          </div>
+          <div class="image-container">
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                   <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                   <h2 class="car-name">Renault Kwid</h2>
+                   <p>Rs. 4.50 - 5.30 Lakh</p>
+                   <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images"> 
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images"> 
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+          </div>
+          <div class="image-container">
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-2017-2020/7259/Honda-City-2017-2020-SV-MT/1637828825177/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                   <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                   <h2 class="car-name">Renault Kwid</h2>
+                   <p>Rs. 4.50 - 5.30 Lakh</p>
+                   <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images"> 
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images"> 
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+              <div class="images">
+                  <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg" />
+                  <h2 class="car-name">Renault Kwid</h2>
+                  <p>Rs. 4.50 - 5.30 Lakh</p>
+                  <button class="toto-btn">View Offers</button>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <section class="section-contact">
+      <div class="container">
+        <h2 class="quick-contact">Quick Contact</h2>
+        <div class="contact-parent grid grid--4--cols">
+          <div class="centre-icon address">
+            <ion-icon class="icons address-icon" name="location-outline"></ion-icon>
+            <p><strong>Address: </strong>Raniganj More Punjabi More</p>
+          </div>
+          <div class="centre-icon phone">
+            <ion-icon class="icons phone-icon" name="call-outline"></ion-icon>
+            <p><strong>Phone: </strong>+91 7797571993</p>
+          </div>
+          <div class="centre-icon email">
+            <ion-icon class="icons email-icon" name="mail-outline"></ion-icon>
+            <p><strong>E-mail: </strong>fayequehannan@gmail.com</p>
+          </div>
+          <div class="centre-icon website">
+            <ion-icon class="icons" name="logo-google"></ion-icon>
+            <a class="contact-email" href="#">www.totowaale.com</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <script>
+      var sliders=document.querySelectorAll(".list-item");
+var currentIndex=0;
+var previousIndex=-1;
+function slide(n){
+    // console.log(sliders);
+    currentIndex += n;
+    previousIndex+=n;
+    if(currentIndex >= sliders.length){
+        currentIndex=0;
+        previousIndex=-1;
+    }
+    if(currentIndex < 0){
+        currentIndex=sliders.length-1;
+    }
+    console.log(currentIndex);
+    for(var i=0;i<sliders.length;i++){
+        sliders[i].classList.remove('active');
+    }
+
+    sliders[currentIndex].classList.add('active');
+
+}
+var d=document.querySelectorAll(".image-container");
+var options=document.querySelectorAll(".option");
+        const handleClick = (i) =>{
+            d.forEach((dt) =>{
+                dt.classList.remove('current');
+            });
+            options.forEach((op) => {
+              op.classList.remove('selected');
+            })
+            d[i].classList.add('current');
+            options[i].classList.add('selected');
+        }
+        
+
+    </script>
+</body>
+</html>

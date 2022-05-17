@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/specs.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Toto Dekho</title>
+</head>
+<body>
+        <div class="navbar">
+        <a href="#">
+            <img class="logo" src="https://www.mahindraelectric.com/images/mobile-header-banner_nw_1.png?v=123" />
+        </a>
+        <div class="contacts">
+            <div class="contact">
+                <ion-icon class="icons address-icon" name="location-outline"></ion-icon>
+                <p class="header_text"><strong>Address: </strong>Raniganj More Punjabi More</p>
+            </div>
+            <div class="contact">
+                <ion-icon class="icons phone-icon" name="call-outline"></ion-icon>
+                <p class="header_text"><strong>Phone: </strong>+91 7797571993</p>
+            </div>
+        </div>
+        </div>
+    <section class="section-price">
+        <div class="price-parent">
+            <div class="price-image">
+                <img class="price-img" src="https://www.arrowvehicles.com/wp-content/themes/arrowvehicles-wp/assets/images/pro.jpg" />
+            </div>
+            <div class="price-preview-image">
+                <img class="preview-img" src="https://www.arrowvehicles.com/wp-content/themes/arrowvehicles-wp/assets/images/pro.jpg" />
+                <img class="preview-img" src="https://www.arrowvehicles.com/wp-content/themes/arrowvehicles-wp/assets/images/pro1.jpg" />
+                <img class="preview-img" src="https://www.arrowvehicles.com/wp-content/themes/arrowvehicles-wp/assets/images/pro2.jpg" />
+                <img class="preview-img" src="https://www.arrowvehicles.com/wp-content/themes/arrowvehicles-wp/assets/images/pro3.jpg" />
+                <img class="preview-img" src="https://www.arrowvehicles.com/wp-content/themes/arrowvehicles-wp/assets/images/pro3.jpg" />
+            </div>
+            <h2 class="price-name">Arrow Neo</h2>
+            <p class="price-price">Rs. 1.25 - 1.4 Lakh</p>
+            <div class="parent-container">
+            <div class="parent">
+                <div onclick="toggleDropdown(event,this)" class="parent-main" data-index="1">
+                    <h2>PERFORMANCE</h2> 
+                    <ion-icon class="plus-icon icon-active" name="add-outline"></ion-icon>
+                    <ion-icon class="minus-icon" name="remove-outline"></ion-icon>
+                </div>
+                <div class="parent-hideshow">
+                    <div class="toggle">
+                    <p>Top speed - km/h</p>
+                    <p>55</p>
+                    <p>Certified Range – km</p>
+                    <p>141</p>
+                    <p>Typical Driving Range – km</p>
+                    <p>130</p>
+                    <p>Gradeability – degree</p>
+                    <p>12.7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div onclick="toggleDropdown(event,this)" class="parent-main" data-index="2">
+                    <h2>BATTERY</h2> 
+                    <ion-icon class="plus-icon icon-active" name="add-outline"></ion-icon>
+                    <ion-icon class="minus-icon" name="remove-outline"></ion-icon>
+                </div>
+                <div class="parent-hideshow">
+                    <div class="toggle">
+                        <p>Battery Type, Voltage</p>
+                        <p>Lithium-ion, 48V</p>
+                        <p>Battery Capacity (Installed) - kWh</p>
+                        <p>7.37</p>
+                        <p>Charging Time 0-100% @Standard Conditions</p>
+                        <p>3 h 50 min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div onclick="toggleDropdown(event,this)" data-index="3" class="parent-main">
+                    <h2>VEHICLE DIMENSIONS & WEIGHT</h2>
+                    <ion-icon class="plus-icon icon-active" name="add-outline"></ion-icon> 
+                    <ion-icon class="minus-icon" name="remove-outline"></ion-icon>
+                </div>
+                <div class="parent-hideshow">
+                    <div class="toggle">
+                        <p>Dimensions - Length x Width x Height - mm</p>
+                        <p>2769 x 1350 x 1750</p>
+                        <p>Wheel Base - mm</p>
+                        <p>2073</p>
+                        <p>Ground Clearance - mm</p>
+                        <p>142</p>
+                        <p>Turning Radius - m</p>
+                        <p>2.9</p>
+                        <p>Vehicle Kerb Weight – kg</p>
+                        <p>377</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div onclick="toggleDropdown(event,this)" class="parent-main" data-index="4">
+                    <h2>SUSPENSION AND BRAKES</h2> 
+                    <ion-icon class="plus-icon icon-active" name="add-outline"></ion-icon>
+                    <ion-icon class="minus-icon" name="remove-outline"></ion-icon>
+                </div>
+                <div class="parent-hideshow">
+                    <div class="toggle">
+                        <p>Suspension - Front</p>
+                        <p>Helical Spring + Dampener + Hydraulic Shock Absorber</p>
+                        <p>Suspension - Rear</p>
+                        <p>Rigid Axle with Leaf Sprig</p>
+                        <p>Brakes - Front/Rear</p>
+                        <p>Hydraulic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div onclick="toggleDropdown(event,this)" class="parent-main" data-index="5">
+                    <h2>E-AUTO</h2> 
+                    <ion-icon class="plus-icon icon-active" name="add-outline"></ion-icon>
+                    <ion-icon class="minus-icon" name="remove-outline"></ion-icon>
+                </div>
+                <div class="parent-hideshow">
+                    <div class="toggle">
+                        <p>Vehicle Category</p>
+                        <p>Electric Rickshaw</p>
+                        <p>Seating Capacity</p>
+                        <p>D + 4 Seater</p>
+                        <p>Vehicle Roof Type</p>
+                        <p>Weather Resistant Flex Canopy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div onclick="toggleDropdown(event,this)" class="parent-main" data-index="6">
+                    <h2>WARRANTY</h2> 
+                    <ion-icon class="plus-icon icon-active" name="add-outline"></ion-icon>
+                    <ion-icon class="minus-icon" name="remove-outline"></ion-icon>
+                </div>
+                <div class="parent-hideshow">
+                    <div class="toggle">
+                        <p>Warranty</p>
+                        <p>36 months*</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        var p=document.querySelectorAll(".parent-hideshow");
+        var previewImage = document.querySelectorAll(".preview-img");
+        var priceImg=document.querySelector(".price-img");
+        console.log(previewImage);
+        previewImage.forEach((pr) => {
+            console.log(pr);
+            pr.addEventListener('click',(e) => {
+                console.log(e.target.src);
+                priceImg.src=e.target.src;
+            })
+        })
+        function toggleDropdown(e,el){
+            console.log(el.dataset.index);
+            console.log(e);
+            if(e.target.children.length == 0){
+                e.target.parentElement.children[1].classList.toggle("icon-active");
+                e.target.parentElement.children[2].classList.toggle("icon-active");
+            }else{
+            e.target.children[1].classList.toggle("icon-active");
+            e.target.children[2].classList.toggle("icon-active");
+            }
+            p[el.dataset.index-1].classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
